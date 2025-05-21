@@ -49,7 +49,7 @@ class AuthenticatedSessionController extends Controller
                 return redirect()->intended(route('autor.dashboard', absolute: false));
             default:
                 // Redirige al dashboard por defecto para otros roles
-                return redirect()->intended(route('dashboard', absolute: false));
+                return redirect()->intended(route('welcome', absolute: false));
         }
     }
 

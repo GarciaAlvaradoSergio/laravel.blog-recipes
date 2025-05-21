@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Backend\AutorController;
+use App\Http\Controllers\Autor\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('dashboard', [AutorController::class, 'dashboard'])->name('dashboard');
+Route::get('dashboard', [HomeController::class, 'dashboard'])->name('dashboard');

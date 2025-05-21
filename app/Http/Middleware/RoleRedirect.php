@@ -28,7 +28,7 @@ class RoleRedirect
         // Verifica si el rol del usuario no coincide con el rol requerido
         if ($request->user()->role !== $role) {
             // Redirige al dashboard general si no tiene los permisos
-            return redirect()->route('dashboard');
+            return redirect()->route('welcome');
         }
 
         // Continúa con la solicitud si el usuario tiene el rol correcto
