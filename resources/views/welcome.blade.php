@@ -1,61 +1,70 @@
 <x-public-layout>
     <x-slot name="title">Welcome</x-slot>
 
-    <div class="container mx-auto mt-10">
-        <h1 class="text-4xl font-bold text-center">Welcome to Our Application</h1>
-        <p class="mt-4 text-center">This is a simple welcome page.</p>
+    <div class="container mt-5">
+        <h1 class="display-4 fw-bold text-center">Welcome to Our Application</h1>
+        <p class="mt-3 text-center">This is a simple welcome page.</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1559847844-5315695dadae" alt="Hamburguesa">
-            <div class="p-6">
-                <div class="flex justify-between items-center mb-2">
-                    <h3 class="text-lg font-semibold text-gray-900">Hamburguesa Gourmet</h3>
-                    <span class="text-xs font-medium px-2 py-1 rounded-full bg-red-100 text-red-800">Carnes</span>
+    <div class="container py-4">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded-4">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae" class="card-img-top" alt="Hamburguesa" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Hamburguesa Gourmet</h5>
+                            <span class="badge bg-danger-subtle text-danger fw-medium">Carnes</span>
+                        </div>
+                        <div class="text-muted small mb-2 d-flex align-items-center">
+                            <span class="me-3">⭐ 4.8 (120)</span>
+                            <span>🕒 25 min</span>
+                        </div>
+                        <p class="card-text text-muted small">Jugosa hamburguesa con queso cheddar, tocino crujiente y salsa especial.</p>
+                        <a href="#" class="text-warning text-decoration-none fw-medium small">Ver receta →</a>
+                    </div>
                 </div>
-                <div class="flex items-center text-sm text-gray-500 mb-3">
-                    <span class="mr-3">⭐ 4.8 (120)</span>
-                    <span>🕒 25 min</span>
-                </div>
-                <p class="text-gray-600 text-sm mb-4">Jugosa hamburguesa con queso cheddar, tocino crujiente y salsa especial.</p>
-                <button class="text-sm text-amber-600 hover:text-amber-700 font-medium">Ver receta →</button>
             </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="Sopa">
-            <div class="p-6">
-                <div class="flex justify-between items-center mb-2">
-                    <h3 class="text-lg font-semibold text-gray-900">Sopa de Calabaza</h3>
-                    <span class="text-xs font-medium px-2 py-1 rounded-full bg-green-100 text-green-800">Vegetariana</span>
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded-4">
+                    <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" class="card-img-top" alt="Sopa" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Sopa de Calabaza</h5>
+                            <span class="badge bg-success-subtle text-success fw-medium">Vegetariana</span>
+                        </div>
+                        <div class="text-muted small mb-2 d-flex align-items-center">
+                            <span class="me-3">⭐ 4.5 (86)</span>
+                            <span>🕒 40 min</span>
+                        </div>
+                        <p class="card-text text-muted small">Cremosa sopa de calabaza asada con un toque de jengibre y nuez moscada.</p>
+                        <a href="#" class="text-warning text-decoration-none fw-medium small">Ver receta →</a>
+                    </div>
                 </div>
-                <div class="flex items-center text-sm text-gray-500 mb-3">
-                    <span class="mr-3">⭐ 4.5 (86)</span>
-                    <span>🕒 40 min</span>
-                </div>
-                <p class="text-gray-600 text-sm mb-4">Cremosa sopa de calabaza asada con un toque de jengibre y nuez moscada.</p>
-                <button class="text-sm text-amber-600 hover:text-amber-700 font-medium">Ver receta →</button>
             </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza">
-            <div class="p-6">
-                <div class="flex justify-between items-center mb-2">
-                    <h3 class="text-lg font-semibold text-gray-900">Pizza Margherita</h3>
-                    <span class="text-xs font-medium px-2 py-1 rounded-full bg-yellow-100 text-yellow-800">Italiana</span>
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded-4">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" class="card-img-top" alt="Pizza" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Pizza Margherita</h5>
+                            <span class="badge bg-warning-subtle text-warning fw-medium">Italiana</span>
+                        </div>
+                        <div class="text-muted small mb-2 d-flex align-items-center">
+                            <span class="me-3">⭐ 4.9 (210)</span>
+                            <span>🕒 1 hora</span>
+                        </div>
+                        <p class="card-text text-muted small">Clásica pizza con salsa de tomate, mozzarella fresca y albahaca.</p>
+                        <a href="#" class="text-warning text-decoration-none fw-medium small">Ver receta →</a>
+                    </div>
                 </div>
-                <div class="flex items-center text-sm text-gray-500 mb-3">
-                    <span class="mr-3">⭐ 4.9 (210)</span>
-                    <span>🕒 1 hora</span>
-                </div>
-                <p class="text-gray-600 text-sm mb-4">Clásica pizza con salsa de tomate, mozzarella fresca y albahaca.</p>
-                <button class="text-sm text-amber-600 hover:text-amber-700 font-medium">Ver receta →</button>
             </div>
         </div>
     </div>
 </x-public-layout>
+
