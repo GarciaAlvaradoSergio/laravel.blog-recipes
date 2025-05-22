@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Controllers\Backend;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\Request;
+
+class AutorController extends Controller
+{
+    public function dashboard(): View{
+        return view('autor.dashboard');
+    }
+}
